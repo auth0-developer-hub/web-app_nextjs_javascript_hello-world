@@ -70,7 +70,7 @@ AUTH0_BASE_URL=http://localhost:4040
 
 Head back to your Auth0 application page. Follow these steps to get the `AUTH0_ISSUER_BASE_URL`, `AUTH0_CLIENT_ID`, and `AUTH0_CLIENT_SECRET` values:
 
-![Auth0 application settings to enable user authentication](https://cdn.auth0.com/blog/complete-guide-to-user-authentication/auth0-application-settings.png)
+![Auth0 application settings to enable user authentication](https://images.ctfassets.net/23aumh6u8s0i/7wXiFoatkdr7hrDxLUQjzs/3c3d7938936b09e46c5336be22c5638f/hello-world-web-app-settings.png)
 
 1. Click on the "Settings" tab, if you haven't already.
 
