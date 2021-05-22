@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 
+import { UserProvider } from "@auth0/nextjs-auth0";
+
 import "../styles/globals.css";
 
 function App({ Component, pageProps }) {
@@ -38,7 +40,9 @@ function App({ Component, pageProps }) {
         />
         <title>Auth0 Next.js Sample</title>
       </Head>
-      <Component {...pageProps} />
+      <UserProvider>
+        <Component {...pageProps} />
+      </UserProvider>
     </>
   );
 }

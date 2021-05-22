@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import PageLayout from "../components/page-layout";
 
+import { useUser } from "@auth0/nextjs-auth0";
+
 const CodeSnippet = ({ code }) => (
   <div className="code-snippet__container">
     <div className="code-snippet__wrapper">
@@ -15,16 +17,7 @@ CodeSnippet.propTypes = {
 };
 
 const Profile = () => {
-  const user = {
-    nickname: "Alex",
-    name: "Alex Cero",
-    picture:
-      "https://images.ctfassets.net/23aumh6u8s0i/XWKpjS2uxXPDPGMl99FoV/d82a062cd4514a985fb47f8d4b5d3660/auth0-user.png",
-    updated_at: "2021-05-04T21:33:09.415Z",
-    email: "alex@example.com",
-    email_verified: false,
-    sub: "auth0|12345678901234567890",
-  };
+  const { user } = useUser();
 
   return (
     <PageLayout>

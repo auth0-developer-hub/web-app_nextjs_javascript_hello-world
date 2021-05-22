@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+import { AuthenticationButton } from "./buttons/authentication-button";
+
 const NavBarTab = ({ href, label }) => {
   const router = useRouter();
 
@@ -45,6 +47,9 @@ export const NavBar = () => {
         <div className="nav-bar__tabs">
           <NavBarTab href="/profile" label="Profile" />
           <NavBarTab href="/external-api" label="External API" />
+        </div>
+        <div className="nav-bar__actions">
+          <AuthenticationButton />
         </div>
       </nav>
     </div>
