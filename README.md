@@ -2,6 +2,8 @@
 
 You can use this sample project to learn how to secure a simple Next.js application using Auth0.
 
+![Hello, Next.js World!](https://images.ctfassets.net/23aumh6u8s0i/5dXIlLgeFsss0xGbHiVJPH/ea998f3a25eedcff360192aea89281c8/hello-next.png)
+
 The `starter` branch offers a functional application that consumes local data to hydrate the user interface. All the starter application routes are public.
 
 The goal is to use Auth0 to get an ID token to hydrate the user profile information present in the `/profile` page and to get an access token to make a secure call to an external API to hydrate the messages present in the `/external-api` page.
