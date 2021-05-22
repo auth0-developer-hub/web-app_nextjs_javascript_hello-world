@@ -7,7 +7,7 @@ This sample uses an [Auth0 Next.js SDK](https://github.com/auth0/nextjs-auth0) t
 - Protect application routes.
 - Make secure calls to an API.
 
-![Hello, Next.js World!](https://images.ctfassets.net/23aumh6u8s0i/3b5tLGdggbe61U8A8OPoxE/3fbf40a054a8597303beb56a18ae1ca6/hello-react.png)
+![Hello, Next.js World!](https://images.ctfassets.net/23aumh6u8s0i/5dXIlLgeFsss0xGbHiVJPH/ea998f3a25eedcff360192aea89281c8/hello-next.png)
 
 The `add-authentication` branch offers a functional application that consumes
 a Context Provider, `UserProvider`, to hydrate the user profile information present in the `/profile` page. It also makes secure calls to an external API to hydrate the messages present in the `/external-api` page.
