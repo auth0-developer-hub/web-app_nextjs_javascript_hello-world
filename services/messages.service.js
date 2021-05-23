@@ -1,12 +1,12 @@
 export const getPublicMessage = () => {
   return {
-    message: "The API doesn't require an access token to share this message.",
+    message: "The API doesn't require authentication to share this message.",
   };
 };
 
 export const getProtectedMessage = () => {
   return {
-    message: "The API successfully validated your access token.",
+    message: "The API successfully recognized you as an authenticated user.",
   };
 };
 
