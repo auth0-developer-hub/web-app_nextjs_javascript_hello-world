@@ -1,6 +1,6 @@
-import { getPublicMessage } from "../../../services/messages.service";
+import { getMessage } from "../../../utils/get-message";
 
-export default function handler(req, res) {
-  const message = getPublicMessage();
-  res.status(200).json(message);
+export default async function handler(req, res) {
+  const message = await getMessage("public");
+  res.status(200).json({ message });
 }

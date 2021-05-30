@@ -66,6 +66,9 @@ AUTH0_CLIENT_ID=
 AUTH0_CLIENT_SECRET=
 AUTH0_SECRET=
 AUTH0_BASE_URL=http://localhost:4040
+
+AUTH0_AUDIENCE=https://hello-world.example.com
+API_SERVER_URL=http://localhost:6060
 ```
 
 Head back to your Auth0 application page. Follow these steps to get the `AUTH0_ISSUER_BASE_URL`, `AUTH0_CLIENT_ID`, and `AUTH0_CLIENT_SECRET` values:
@@ -99,6 +102,14 @@ npm run dev
 Visit [`http://localhost:4040/`](http://localhost:4040/) to access the application.
 
 ## Advanced Auth0 Set Up
+
+### Connecting to an external API
+
+The external API used in this Next.js sample is the ["Hello World API: Express.js Sample"](https://github.com/auth0-sample-gallery/api_express_javascript_hello-world).
+
+Follow the instructions on that `README` of that repository to set up and run the API.
+
+Once set up, you can see the different server responses by interacting with the message box present in [`http://localhost:4040/external-api`](http://localhost:4040/external-api).
 
 ### Admin access
 

@@ -1,8 +1,21 @@
-import { withApiAuthRequired } from "@auth0/nextjs-auth0";
+import { getAccessToken, withApiAuthRequired } from "@auth0/nextjs-auth0";
+import { getMessage } from "../../../utils/get-message";
 
-import { getProtectedMessage } from "../../../services/messages.service";
+export default withApiAuthRequired(async function handler(req, res) {
+  const { accessToken } = await getAccessToken(req, res);
 
-export default withApiAuthRequired(function handler(req, res) {
-  const message = getProtectedMessage();
-  res.status(200).json(message);
+  if (accessToken === null) {
+    res.status(401).json({ message: "Unauthorized" });
+    return;
+  }
+
+  const options = {
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+    },
+  };
+
+  const message = await getMessage("protected", options);
+
+  res.status(200).json({ message });
 });
