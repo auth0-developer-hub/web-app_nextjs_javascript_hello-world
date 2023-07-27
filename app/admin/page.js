@@ -22,7 +22,8 @@ const Admin = () => {
         <div className="content__body">
           <p id="page-description">
             <span>
-              This page retrieves an <strong>admin message</strong>.
+              This page retrieves an <strong>admin message</strong> from an
+              external API.
             </span>
             <span>
               <strong>
